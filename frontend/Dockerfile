@@ -19,4 +19,4 @@ RUN npm run build
 
 # serve the application
 RUN npm install -g serve
-CMD ["serve", "-s", "build", "-l", "3000"]
+CMD ["npx", "serve", "-s", "build", "-l", "3000"]
