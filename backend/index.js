@@ -24,6 +24,9 @@ mongoose
     .catch((err) => console.log("NOT CONNECTED TO NETWORK", err))
 
 app.use('/', Routes);
+app.get('/', (req, res) => {
+    res.send("Hello from the server")
+});
 
 app.listen(PORT, () => {
     console.log(`Server started at port no. ${PORT}`)
